@@ -6,9 +6,9 @@ window._ = lodash
 window.moment = moment
 moment.tz.setDefault("Asia/Tokyo")
 
-import Amplify, { API, graphqlOperation } from 'aws-amplify';
-import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
+// import Amplify, { API, graphqlOperation } from 'aws-amplify';
+// import awsconfig from './aws-exports';
+// Amplify.configure(awsconfig);
 
 import Vue from 'vue'
 import App from './App.vue'

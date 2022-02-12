@@ -1,15 +1,11 @@
 <template>
-  <v-navigation-drawer
-    app
-    clipped
-    v-model="frame_isShowDrawer"
-  >
+  <v-navigation-drawer app clipped v-model="frame_isShowDrawer">
     <template v-slot:prepend>
       <v-card flat color="transparent">
         <v-card-actions>
           <v-list-item>
             <v-list-item-avatar>
-              <img src="@/assets/avator.png">
+              <img src="@/assets/avator.png" />
             </v-list-item-avatar>
             <v-list-item-content>
               <v-list-item-title class="font-weight-bold">
@@ -23,40 +19,44 @@
             </v-list-item-content>
           </v-list-item>
         </v-card-actions>
-        <v-card-actions>
-          <v-list-item>
-            <v-list-item-content>
-              <v-row>
-                <v-col cols="6">
-                  <v-btn
-                    small
-                    block
-                    dark
-                    color="#1da1f2"
-                    href="https://twitter.com/MadakaHeri"
-                    target="_blank"
-                  >
-                    <v-icon small>mdi-twitter</v-icon>
-                    <span class="ml-2">Twitter</span>
-                  </v-btn>
-                </v-col>
-                <v-col cols="6">
-                  <v-btn
-                    small
-                    block
-                    dark
-                    color="#000"
-                    href="https://github.com/MadakaHeri"
-                    target="_blank"
-                  >
-                    <v-icon small>mdi-github</v-icon>
-                    <span class="ml-2">GitHub</span>
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-list-item-content>
-          </v-list-item>
-        </v-card-actions>
+        <v-container>
+          <v-btn
+            class="mt-2"
+            small
+            block
+            dark
+            color="#1da1f2"
+            href="https://twitter.com/MadakaHeri"
+            target="_blank"
+          >
+            <v-icon small>mdi-twitter</v-icon>
+            <span class="ml-2">Twitter</span>
+          </v-btn>
+          <v-btn
+            class="mt-2"
+            small
+            block
+            dark
+            color="#000"
+            href="https://github.com/MadakaHeri"
+            target="_blank"
+          >
+            <v-icon small>mdi-github</v-icon>
+            <span class="ml-2">GitHub</span>
+          </v-btn>
+          <v-btn
+            class="mt-2"
+            small
+            block
+            dark
+            color="#FA0300"
+            href="https://www.youtube.com/channel/UCdYdqeVNy9D1ZDWrE6Z6uMA"
+            target="_blank"
+          >
+            <v-icon small>mdi-youtube</v-icon>
+            <span class="ml-2">YouTube</span>
+          </v-btn>
+        </v-container>
       </v-card>
       <v-divider></v-divider>
     </template>
@@ -70,15 +70,9 @@
     </v-card> -->
     <!-- <v-divider></v-divider> -->
 
-    <v-list
-      dense
-      nav
-    >
+    <v-list dense nav>
       <v-subheader>CONTENTS</v-subheader>
-      <v-list-item
-        link
-        to="/"
-      >
+      <v-list-item link to="/">
         <v-list-item-icon>
           <v-icon>mdi-home</v-icon>
         </v-list-item-icon>
@@ -86,10 +80,7 @@
           <v-list-item-title>HOME</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-list-item
-        link
-        to="/profile"
-      >
+      <v-list-item link to="/profile">
         <v-list-item-icon>
           <v-icon>mdi-face</v-icon>
         </v-list-item-icon>
@@ -98,7 +89,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
-      <!-- <v-list-item
+    <!-- <v-list-item
         link
         to="/posts"
       >
@@ -110,7 +101,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-list> -->
-    
+
     <v-divider></v-divider>
 
     <!-- <v-list
@@ -157,15 +148,9 @@
 
     <v-divider></v-divider> -->
 
-    <v-list
-      dense
-      nav
-    >
+    <v-list dense nav>
       <v-subheader>CREDITS</v-subheader>
-      <v-list-item
-        link
-        to="/credits"
-      >
+      <v-list-item link to="/credits">
         <v-list-item-icon>
           <v-icon>mdi-decagram</v-icon>
         </v-list-item-icon>
@@ -183,9 +168,7 @@
         </v-btn>
       </aside>
       <footer class="text-center text--disabled pa-4">
-        <small>
-          Copyright &copy MadakaHeri
-        </small>
+        <small> Copyright &copy MadakaHeri </small>
       </footer>
     </template>
   </v-navigation-drawer>
