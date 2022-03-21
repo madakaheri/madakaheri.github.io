@@ -5,7 +5,7 @@ module.exports = {
     'vuetify'
   ],
 
-  outputDir: 'docs',
+  outputDir: 'dist',
 
   pwa: {
     name: 'MadakaHeri',
